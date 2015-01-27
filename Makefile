@@ -1,4 +1,4 @@
-all: eggshell findegg
+all: eggshell findegg overflow
 
 eggshell:
 	gcc -o eggshell eggshell.c
@@ -6,4 +6,7 @@ eggshell:
 findegg:
 	gcc -o findegg findegg.c
 
-.PHONY: eggshell findegg
+overflow:
+	gcc -o overflow overflow.c
+
+.PHONY: eggshell findegg overflow
